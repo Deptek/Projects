@@ -16,7 +16,8 @@ def speak(text):
 
 def processcommand(c):
     if c.lower().startswith("open"):  #yaah agar c.lower likha to command c ka lower mange ga lekin likhna hame c.lower() jisse c ki value ka liower aye
-        website=c.lower().split(" ")[1]  #usi valu ka split space ke hisab se karke 1st index pe ane wale word ko website le liya
+        website=c.lower().split(" ")[1]
+        speak(f"openning {website}")  #usi valu ka split space ke hisab se karke 1st index pe ane wale word ko website le liya
         webbrowser.open(f"https://{website}.com")
     # elif c.lower().startswith("play song"):
     #     song=c.lower().split(" ")[2]  
@@ -44,7 +45,7 @@ if __name__=="__main__":
         try:         #this line means listen(from r= recocognize) from the source= microphone and store it in audio
             with sr.Microphone() as source:
                 print("listening...")
-                audio = r.listen(source ,timeout=2,phrase_time_limit=1) #timeout is time till then system will wait foe an input 
+                audio = r.listen(source ,timeout=2,phrase_time_limit=1) #timeout is time till then system will wait for an input 
                                                       #and phrase_time is limit that how much time you can wait between saying words   
             word= r.recognize_google(audio) # type: ignore
             print(word)
