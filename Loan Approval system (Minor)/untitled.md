@@ -1,1 +1,0 @@
-Build an end to end ML-pipeline using knn, Logistic regression and Naive bayes to predict loan approval. Implemented binary classification, EDA, Feature eng. and model evaluation.
