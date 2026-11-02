@@ -50,5 +50,6 @@ Features:
 
 Run:
 -streamlit run app.py
-<img width="431" height="2268" alt="image" src="https://github.com/user-attachments/assets/79b012a4-60ff-4f9b-917d-a440ed4dc20c" />
+<img width="1306" height="847" alt="Screenshot 2026-11-02 201200" src="https://github.com/user-attachments/assets/2280024e-2d27-48ed-a5ab-67d5bbdef55b" />
+
 
